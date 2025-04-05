@@ -31,10 +31,10 @@ class ThreadOne extends Thread{
         }
     }
 }
-class ThreadTTwo implements Runnable{
+class threadTwo implements Runnable{
     Thread t;
     String s;
-    ThreadTTwo(int p,String s){
+    threadTwo(int p,String s){
         this.s=s;
         t=new Thread(this);
         t.setPriority(p);
@@ -47,7 +47,7 @@ class ThreadTTwo implements Runnable{
             try {
                 Thread.sleep(5000);
             } catch (InterruptedException ex) {
-                Logger.getLogger(ThreadTTwo.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(threadTwo.class.getName()).log(Level.SEVERE, null, ex);
             }
             System.out.println(s);
         }
