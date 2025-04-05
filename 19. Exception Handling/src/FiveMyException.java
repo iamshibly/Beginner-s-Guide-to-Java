@@ -7,7 +7,7 @@ public class FiveMyException {
         a = input.nextInt();
         if(a<0){
             try{
-                throw new MException("less than zero");
+                throw new mExeption("less than zero");
             }
             catch(Exception e){
                 System.out.println(e.getMessage());
@@ -21,8 +21,8 @@ public class FiveMyException {
         System.out.println("Job");
     }
 }
-class MException extends Exception{
-    MException(String message){
+class mExeption extends Exception{
+    mExeption(String message){
         super(message);
     }
 }
